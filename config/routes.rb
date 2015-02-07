@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :trip_routes
+
   resources :driver_trip_routes
 
   resources :driver_trip_seats

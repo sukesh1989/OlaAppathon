@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Trip Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pointlat</th>
+      <th>Pointlong</th>
+      <th>Drivertrip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trip_routes.each do |trip_route| %>
+      <tr>
+        <td><%= trip_route.pointlat %></td>
+        <td><%= trip_route.pointlong %></td>
+        <td><%= trip_route.DriverTrip %></td>
+        <td><%= link_to 'Show', trip_route %></td>
+        <td><%= link_to 'Edit', edit_trip_route_path(trip_route) %></td>
+        <td><%= link_to 'Destroy', trip_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trip route', new_trip_route_path %>
