@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    #@users = User.all
+    @user=User.find_by_email(params[:email])
   end
 
   # GET /users/1
@@ -53,12 +54,7 @@ class UsersController < ApplicationController
 
 
 
-def check
-  @test=User.find_by_email(params[:email])
-  respond_to do |format|
-     format.json { render :show, status: :ok, location: @user }
-  end
-end
+
 
 
  
