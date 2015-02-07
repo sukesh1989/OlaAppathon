@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :driver_trip_seats
+
+  resources :driver_trips
+
+  resources :drivers
+
   resources :users
 
   resources :tests

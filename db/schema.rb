@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150207091222) do
+ActiveRecord::Schema.define(version: 20150207105335) do
+
+  create_table "driver_trip_seats", force: :cascade do |t|
+    t.string   "from",          limit: 255
+    t.string   "to",            limit: 255
+    t.string   "seatsoccupied", limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "driver_trips", force: :cascade do |t|
+    t.string   "start",           limit: 255
+    t.string   "end",             limit: 255
+    t.string   "isCurrent",       limit: 255
+    t.string   "currentPosition", limit: 255
+    t.integer  "Driver_id",       limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
+
+  add_index "driver_trips", ["Driver_id"], name: "index_driver_trips_on_Driver_id", using: :btree
+
+  create_table "drivers", force: :cascade do |t|
+    t.string   "name",            limit: 255
+    t.string   "mobile",          limit: 255
+    t.string   "currentlocation", limit: 255
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "tests", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -32,4 +60,5 @@ ActiveRecord::Schema.define(version: 20150207091222) do
     t.datetime "updated_at",                   null: false
   end
 
+  add_foreign_key "driver_trips", "Drivers"
 end
