@@ -32,8 +32,11 @@
 
 <p>
   <strong>Default location:</strong>
-  <%= @user.default_location %>
+  <%= @user.defaultlat %>
 </p>
-
+<p>
+  <strong>Default location:</strong>
+  <%= @user.defaultlong %>
+</p>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

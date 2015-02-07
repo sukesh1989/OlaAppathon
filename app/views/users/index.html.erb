@@ -25,7 +25,8 @@
         <td><%= user.mobile %></td>
         <td><%= user.source %></td>
         <td><%= user.device_id %></td>
-        <td><%= user.default_location %></td>
+        <td><%= user.defaultlong %></td>
+              <td><%= user.defaultlat %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
