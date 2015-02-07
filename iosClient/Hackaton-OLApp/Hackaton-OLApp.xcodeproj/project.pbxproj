@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48CFCAD01A85C52800A1E690 /* HKHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCACF1A85C52800A1E690 /* HKHTTPRequestOperationManager.m */; };
+		48CFCAE51A85C57000A1E690 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAD41A85C57000A1E690 /* AFURLConnectionOperation.m */; };
+		48CFCAE61A85C57000A1E690 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAD61A85C57000A1E690 /* AFHTTPRequestOperation.m */; };
+		48CFCAE71A85C57000A1E690 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAD81A85C57000A1E690 /* AFHTTPRequestOperationManager.m */; };
+		48CFCAE81A85C57000A1E690 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCADA1A85C57000A1E690 /* AFURLSessionManager.m */; };
+		48CFCAE91A85C57000A1E690 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCADC1A85C57000A1E690 /* AFHTTPSessionManager.m */; };
+		48CFCAEA1A85C57000A1E690 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCADE1A85C57000A1E690 /* AFURLRequestSerialization.m */; };
+		48CFCAEB1A85C57000A1E690 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE01A85C57000A1E690 /* AFURLResponseSerialization.m */; };
+		48CFCAEC1A85C57000A1E690 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE21A85C57000A1E690 /* AFNetworkReachabilityManager.m */; };
+		48CFCAED1A85C57000A1E690 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE41A85C57000A1E690 /* AFSecurityPolicy.m */; };
+		48F7DFBE1A85227B00669CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFBD1A85227B00669CC8 /* Foundation.framework */; };
+		48F7DFC01A85227B00669CC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFBF1A85227B00669CC8 /* CoreGraphics.framework */; };
+		48F7DFC21A85227B00669CC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFC11A85227B00669CC8 /* UIKit.framework */; };
+		48F7DFC41A85227B00669CC8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFC31A85227B00669CC8 /* CoreData.framework */; };
+		48F7DFCA1A85227B00669CC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48F7DFC81A85227B00669CC8 /* InfoPlist.strings */; };
+		48F7DFCC1A85227B00669CC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F7DFCB1A85227B00669CC8 /* main.m */; };
+		48F7DFD01A85227B00669CC8 /* HKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F7DFCF1A85227B00669CC8 /* HKAppDelegate.m */; };
+		48F7DFD31A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F7DFD11A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld */; };
+		48F7DFD51A85227B00669CC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F7DFD41A85227B00669CC8 /* Images.xcassets */; };
+		48F7DFDC1A85227B00669CC8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFDB1A85227B00669CC8 /* XCTest.framework */; };
+		48F7DFDD1A85227B00669CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFBD1A85227B00669CC8 /* Foundation.framework */; };
+		48F7DFDE1A85227B00669CC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFC11A85227B00669CC8 /* UIKit.framework */; };
+		48F7DFDF1A85227B00669CC8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFC31A85227B00669CC8 /* CoreData.framework */; };
+		48F7DFE71A85227B00669CC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48F7DFE51A85227B00669CC8 /* InfoPlist.strings */; };
+		48F7DFE91A85227B00669CC8 /* Hackaton_OLAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F7DFE81A85227B00669CC8 /* Hackaton_OLAppTests.m */; };
+		48F7DFF31A85229800669CC8 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFF21A85229800669CC8 /* GoogleMaps.framework */; };
+		48F7DFF51A8522A900669CC8 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48F7DFF41A8522A900669CC8 /* GoogleMaps.bundle */; };
+		48F7DFF81A8522ED00669CC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFF71A8522ED00669CC8 /* AVFoundation.framework */; };
+		48F7DFFA1A85231E00669CC8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFF91A85231E00669CC8 /* CoreLocation.framework */; };
+		48F7DFFC1A85232800669CC8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFFB1A85232800669CC8 /* CoreText.framework */; };
+		48F7DFFE1A85233100669CC8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFFD1A85233100669CC8 /* GLKit.framework */; };
+		48F7E0001A85234500669CC8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFFF1A85234500669CC8 /* ImageIO.framework */; };
+		48F7E0021A85235500669CC8 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E0011A85235500669CC8 /* libc++.dylib */; };
+		48F7E0041A85236400669CC8 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E0031A85236400669CC8 /* libicucore.dylib */; };
+		48F7E0061A85237000669CC8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E0051A85237000669CC8 /* libz.dylib */; };
+		48F7E0081A85237E00669CC8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E0071A85237E00669CC8 /* OpenGLES.framework */; };
+		48F7E00A1A85238700669CC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E0091A85238700669CC8 /* QuartzCore.framework */; };
+		48F7E00C1A85239300669CC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7E00B1A85239300669CC8 /* SystemConfiguration.framework */; };
+		48F7E0111A85254300669CC8 /* HKMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F7E00F1A85254300669CC8 /* HKMapVC.m */; };
+		48F7E0121A85254300669CC8 /* HKMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48F7E0101A85254300669CC8 /* HKMapVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48F7DFE01A85227B00669CC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F7DFB21A85227B00669CC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48F7DFB91A85227B00669CC8;
+			remoteInfo = "Hackaton-OLApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48CFCACE1A85C52800A1E690 /* HKHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		48CFCACF1A85C52800A1E690 /* HKHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		48CFCAD21A85C57000A1E690 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		48CFCAD31A85C57000A1E690 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		48CFCAD41A85C57000A1E690 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		48CFCAD51A85C57000A1E690 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		48CFCAD61A85C57000A1E690 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		48CFCAD71A85C57000A1E690 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		48CFCAD81A85C57000A1E690 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		48CFCAD91A85C57000A1E690 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		48CFCADA1A85C57000A1E690 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		48CFCADB1A85C57000A1E690 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		48CFCADC1A85C57000A1E690 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		48CFCADD1A85C57000A1E690 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		48CFCADE1A85C57000A1E690 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		48CFCADF1A85C57000A1E690 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		48CFCAE01A85C57000A1E690 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		48CFCAE11A85C57000A1E690 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		48CFCAE21A85C57000A1E690 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		48CFCAE31A85C57000A1E690 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		48CFCAE41A85C57000A1E690 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		48F7DFBA1A85227B00669CC8 /* Hackaton-OLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton-OLApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F7DFBD1A85227B00669CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48F7DFBF1A85227B00669CC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48F7DFC11A85227B00669CC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48F7DFC31A85227B00669CC8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		48F7DFC71A85227B00669CC8 /* Hackaton-OLApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hackaton-OLApp-Info.plist"; sourceTree = "<group>"; };
+		48F7DFC91A85227B00669CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48F7DFCB1A85227B00669CC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48F7DFCD1A85227B00669CC8 /* Hackaton-OLApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hackaton-OLApp-Prefix.pch"; sourceTree = "<group>"; };
+		48F7DFCE1A85227B00669CC8 /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
+		48F7DFCF1A85227B00669CC8 /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
+		48F7DFD21A85227B00669CC8 /* Hackaton_OLApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hackaton_OLApp.xcdatamodel; sourceTree = "<group>"; };
+		48F7DFD41A85227B00669CC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		48F7DFDA1A85227B00669CC8 /* Hackaton-OLAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackaton-OLAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F7DFDB1A85227B00669CC8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		48F7DFE41A85227B00669CC8 /* Hackaton-OLAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hackaton-OLAppTests-Info.plist"; sourceTree = "<group>"; };
+		48F7DFE61A85227B00669CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48F7DFE81A85227B00669CC8 /* Hackaton_OLAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hackaton_OLAppTests.m; sourceTree = "<group>"; };
+		48F7DFF21A85229800669CC8 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		48F7DFF41A8522A900669CC8 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		48F7DFF71A8522ED00669CC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		48F7DFF91A85231E00669CC8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		48F7DFFB1A85232800669CC8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		48F7DFFD1A85233100669CC8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		48F7DFFF1A85234500669CC8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		48F7E0011A85235500669CC8 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		48F7E0031A85236400669CC8 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		48F7E0051A85237000669CC8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		48F7E0071A85237E00669CC8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		48F7E0091A85238700669CC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		48F7E00B1A85239300669CC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		48F7E00E1A85254300669CC8 /* HKMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKMapVC.h; sourceTree = "<group>"; };
+		48F7E00F1A85254300669CC8 /* HKMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKMapVC.m; sourceTree = "<group>"; };
+		48F7E0101A85254300669CC8 /* HKMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKMapVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F7DFB71A85227B00669CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F7E00C1A85239300669CC8 /* SystemConfiguration.framework in Frameworks */,
+				48F7E00A1A85238700669CC8 /* QuartzCore.framework in Frameworks */,
+				48F7E0081A85237E00669CC8 /* OpenGLES.framework in Frameworks */,
+				48F7E0061A85237000669CC8 /* libz.dylib in Frameworks */,
+				48F7E0041A85236400669CC8 /* libicucore.dylib in Frameworks */,
+				48F7E0021A85235500669CC8 /* libc++.dylib in Frameworks */,
+				48F7E0001A85234500669CC8 /* ImageIO.framework in Frameworks */,
+				48F7DFFE1A85233100669CC8 /* GLKit.framework in Frameworks */,
+				48F7DFFC1A85232800669CC8 /* CoreText.framework in Frameworks */,
+				48F7DFFA1A85231E00669CC8 /* CoreLocation.framework in Frameworks */,
+				48F7DFC41A85227B00669CC8 /* CoreData.framework in Frameworks */,
+				48F7DFF81A8522ED00669CC8 /* AVFoundation.framework in Frameworks */,
+				48F7DFC01A85227B00669CC8 /* CoreGraphics.framework in Frameworks */,
+				48F7DFC21A85227B00669CC8 /* UIKit.framework in Frameworks */,
+				48F7DFF31A85229800669CC8 /* GoogleMaps.framework in Frameworks */,
+				48F7DFBE1A85227B00669CC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F7DFD71A85227B00669CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F7DFDC1A85227B00669CC8 /* XCTest.framework in Frameworks */,
+				48F7DFDF1A85227B00669CC8 /* CoreData.framework in Frameworks */,
+				48F7DFDE1A85227B00669CC8 /* UIKit.framework in Frameworks */,
+				48F7DFDD1A85227B00669CC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48CFCAD11A85C54700A1E690 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCACE1A85C52800A1E690 /* HKHTTPRequestOperationManager.h */,
+				48CFCACF1A85C52800A1E690 /* HKHTTPRequestOperationManager.m */,
+			);
+			name = "Network Manager";
+			sourceTree = "<group>";
+		};
+		48CFCAEE1A85C57A00A1E690 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAD21A85C57000A1E690 /* AFNetworking.h */,
+				48CFCAD31A85C57000A1E690 /* AFURLConnectionOperation.h */,
+				48CFCAD41A85C57000A1E690 /* AFURLConnectionOperation.m */,
+				48CFCAD51A85C57000A1E690 /* AFHTTPRequestOperation.h */,
+				48CFCAD61A85C57000A1E690 /* AFHTTPRequestOperation.m */,
+				48CFCAD71A85C57000A1E690 /* AFHTTPRequestOperationManager.h */,
+				48CFCAD81A85C57000A1E690 /* AFHTTPRequestOperationManager.m */,
+				48CFCAD91A85C57000A1E690 /* AFURLSessionManager.h */,
+				48CFCADA1A85C57000A1E690 /* AFURLSessionManager.m */,
+				48CFCADB1A85C57000A1E690 /* AFHTTPSessionManager.h */,
+				48CFCADC1A85C57000A1E690 /* AFHTTPSessionManager.m */,
+				48CFCADD1A85C57000A1E690 /* AFURLRequestSerialization.h */,
+				48CFCADE1A85C57000A1E690 /* AFURLRequestSerialization.m */,
+				48CFCADF1A85C57000A1E690 /* AFURLResponseSerialization.h */,
+				48CFCAE01A85C57000A1E690 /* AFURLResponseSerialization.m */,
+				48CFCAE11A85C57000A1E690 /* AFNetworkReachabilityManager.h */,
+				48CFCAE21A85C57000A1E690 /* AFNetworkReachabilityManager.m */,
+				48CFCAE31A85C57000A1E690 /* AFSecurityPolicy.h */,
+				48CFCAE41A85C57000A1E690 /* AFSecurityPolicy.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		48CFCAEF1A85C59800A1E690 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAEE1A85C57A00A1E690 /* AFNetworking */,
+				48CFCAD11A85C54700A1E690 /* Network Manager */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		48F7DFB11A85227B00669CC8 = {
+			isa = PBXGroup;
+			children = (
+				48F7DFC51A85227B00669CC8 /* Hackaton-OLApp */,
+				48F7DFE21A85227B00669CC8 /* Hackaton-OLAppTests */,
+				48F7DFF61A8522B200669CC8 /* Resources */,
+				48F7DFBC1A85227B00669CC8 /* Frameworks */,
+				48F7DFBB1A85227B00669CC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48F7DFBB1A85227B00669CC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F7DFBA1A85227B00669CC8 /* Hackaton-OLApp.app */,
+				48F7DFDA1A85227B00669CC8 /* Hackaton-OLAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48F7DFBC1A85227B00669CC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F7E00B1A85239300669CC8 /* SystemConfiguration.framework */,
+				48F7E0091A85238700669CC8 /* QuartzCore.framework */,
+				48F7E0071A85237E00669CC8 /* OpenGLES.framework */,
+				48F7E0051A85237000669CC8 /* libz.dylib */,
+				48F7E0031A85236400669CC8 /* libicucore.dylib */,
+				48F7E0011A85235500669CC8 /* libc++.dylib */,
+				48F7DFFF1A85234500669CC8 /* ImageIO.framework */,
+				48F7DFFD1A85233100669CC8 /* GLKit.framework */,
+				48F7DFFB1A85232800669CC8 /* CoreText.framework */,
+				48F7DFF91A85231E00669CC8 /* CoreLocation.framework */,
+				48F7DFF71A8522ED00669CC8 /* AVFoundation.framework */,
+				48F7DFF21A85229800669CC8 /* GoogleMaps.framework */,
+				48F7DFBD1A85227B00669CC8 /* Foundation.framework */,
+				48F7DFBF1A85227B00669CC8 /* CoreGraphics.framework */,
+				48F7DFC11A85227B00669CC8 /* UIKit.framework */,
+				48F7DFC31A85227B00669CC8 /* CoreData.framework */,
+				48F7DFDB1A85227B00669CC8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48F7DFC51A85227B00669CC8 /* Hackaton-OLApp */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAEF1A85C59800A1E690 /* Network */,
+				48F7E00D1A85250C00669CC8 /* Map View Controller */,
+				48F7DFCE1A85227B00669CC8 /* HKAppDelegate.h */,
+				48F7DFCF1A85227B00669CC8 /* HKAppDelegate.m */,
+				48F7DFD41A85227B00669CC8 /* Images.xcassets */,
+				48F7DFD11A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld */,
+				48F7DFC61A85227B00669CC8 /* Supporting Files */,
+			);
+			path = "Hackaton-OLApp";
+			sourceTree = "<group>";
+		};
+		48F7DFC61A85227B00669CC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48F7DFC71A85227B00669CC8 /* Hackaton-OLApp-Info.plist */,
+				48F7DFC81A85227B00669CC8 /* InfoPlist.strings */,
+				48F7DFCB1A85227B00669CC8 /* main.m */,
+				48F7DFCD1A85227B00669CC8 /* Hackaton-OLApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48F7DFE21A85227B00669CC8 /* Hackaton-OLAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				48F7DFE81A85227B00669CC8 /* Hackaton_OLAppTests.m */,
+				48F7DFE31A85227B00669CC8 /* Supporting Files */,
+			);
+			path = "Hackaton-OLAppTests";
+			sourceTree = "<group>";
+		};
+		48F7DFE31A85227B00669CC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48F7DFE41A85227B00669CC8 /* Hackaton-OLAppTests-Info.plist */,
+				48F7DFE51A85227B00669CC8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48F7DFF61A8522B200669CC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48F7DFF41A8522A900669CC8 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		48F7E00D1A85250C00669CC8 /* Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48F7E00E1A85254300669CC8 /* HKMapVC.h */,
+				48F7E00F1A85254300669CC8 /* HKMapVC.m */,
+				48F7E0101A85254300669CC8 /* HKMapVC.xib */,
+			);
+			name = "Map View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48F7DFB91A85227B00669CC8 /* Hackaton-OLApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F7DFEC1A85227B00669CC8 /* Build configuration list for PBXNativeTarget "Hackaton-OLApp" */;
+			buildPhases = (
+				48F7DFB61A85227B00669CC8 /* Sources */,
+				48F7DFB71A85227B00669CC8 /* Frameworks */,
+				48F7DFB81A85227B00669CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hackaton-OLApp";
+			productName = "Hackaton-OLApp";
+			productReference = 48F7DFBA1A85227B00669CC8 /* Hackaton-OLApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48F7DFD91A85227B00669CC8 /* Hackaton-OLAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F7DFEF1A85227B00669CC8 /* Build configuration list for PBXNativeTarget "Hackaton-OLAppTests" */;
+			buildPhases = (
+				48F7DFD61A85227B00669CC8 /* Sources */,
+				48F7DFD71A85227B00669CC8 /* Frameworks */,
+				48F7DFD81A85227B00669CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F7DFE11A85227B00669CC8 /* PBXTargetDependency */,
+			);
+			name = "Hackaton-OLAppTests";
+			productName = "Hackaton-OLAppTests";
+			productReference = 48F7DFDA1A85227B00669CC8 /* Hackaton-OLAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48F7DFB21A85227B00669CC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = raj.org;
+				TargetAttributes = {
+					48F7DFD91A85227B00669CC8 = {
+						TestTargetID = 48F7DFB91A85227B00669CC8;
+					};
+				};
+			};
+			buildConfigurationList = 48F7DFB51A85227B00669CC8 /* Build configuration list for PBXProject "Hackaton-OLApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48F7DFB11A85227B00669CC8;
+			productRefGroup = 48F7DFBB1A85227B00669CC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48F7DFB91A85227B00669CC8 /* Hackaton-OLApp */,
+				48F7DFD91A85227B00669CC8 /* Hackaton-OLAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48F7DFB81A85227B00669CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F7DFF51A8522A900669CC8 /* GoogleMaps.bundle in Resources */,
+				48F7DFCA1A85227B00669CC8 /* InfoPlist.strings in Resources */,
+				48F7E0121A85254300669CC8 /* HKMapVC.xib in Resources */,
+				48F7DFD51A85227B00669CC8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F7DFD81A85227B00669CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F7DFE71A85227B00669CC8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F7DFB61A85227B00669CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CFCAED1A85C57000A1E690 /* AFSecurityPolicy.m in Sources */,
+				48CFCAE81A85C57000A1E690 /* AFURLSessionManager.m in Sources */,
+				48CFCAEC1A85C57000A1E690 /* AFNetworkReachabilityManager.m in Sources */,
+				48F7DFCC1A85227B00669CC8 /* main.m in Sources */,
+				48F7DFD01A85227B00669CC8 /* HKAppDelegate.m in Sources */,
+				48F7E0111A85254300669CC8 /* HKMapVC.m in Sources */,
+				48F7DFD31A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld in Sources */,
+				48CFCAE51A85C57000A1E690 /* AFURLConnectionOperation.m in Sources */,
+				48CFCAD01A85C52800A1E690 /* HKHTTPRequestOperationManager.m in Sources */,
+				48CFCAEA1A85C57000A1E690 /* AFURLRequestSerialization.m in Sources */,
+				48CFCAE91A85C57000A1E690 /* AFHTTPSessionManager.m in Sources */,
+				48CFCAE71A85C57000A1E690 /* AFHTTPRequestOperationManager.m in Sources */,
+				48CFCAEB1A85C57000A1E690 /* AFURLResponseSerialization.m in Sources */,
+				48CFCAE61A85C57000A1E690 /* AFHTTPRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F7DFD61A85227B00669CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F7DFE91A85227B00669CC8 /* Hackaton_OLAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48F7DFE11A85227B00669CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48F7DFB91A85227B00669CC8 /* Hackaton-OLApp */;
+			targetProxy = 48F7DFE01A85227B00669CC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48F7DFC81A85227B00669CC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F7DFC91A85227B00669CC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		48F7DFE51A85227B00669CC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F7DFE61A85227B00669CC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48F7DFEA1A85227B00669CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48F7DFEB1A85227B00669CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48F7DFED1A85227B00669CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackaton-OLApp/Hackaton-OLApp-Prefix.pch";
+				INFOPLIST_FILE = "Hackaton-OLApp/Hackaton-OLApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		48F7DFEE1A85227B00669CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackaton-OLApp/Hackaton-OLApp-Prefix.pch";
+				INFOPLIST_FILE = "Hackaton-OLApp/Hackaton-OLApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		48F7DFF01A85227B00669CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackaton-OLApp.app/Hackaton-OLApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackaton-OLApp/Hackaton-OLApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hackaton-OLAppTests/Hackaton-OLAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		48F7DFF11A85227B00669CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hackaton-OLApp.app/Hackaton-OLApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hackaton-OLApp/Hackaton-OLApp-Prefix.pch";
+				INFOPLIST_FILE = "Hackaton-OLAppTests/Hackaton-OLAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F7DFB51A85227B00669CC8 /* Build configuration list for PBXProject "Hackaton-OLApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F7DFEA1A85227B00669CC8 /* Debug */,
+				48F7DFEB1A85227B00669CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F7DFEC1A85227B00669CC8 /* Build configuration list for PBXNativeTarget "Hackaton-OLApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F7DFED1A85227B00669CC8 /* Debug */,
+				48F7DFEE1A85227B00669CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F7DFEF1A85227B00669CC8 /* Build configuration list for PBXNativeTarget "Hackaton-OLAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F7DFF01A85227B00669CC8 /* Debug */,
+				48F7DFF11A85227B00669CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48F7DFD11A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48F7DFD21A85227B00669CC8 /* Hackaton_OLApp.xcdatamodel */,
+			);
+			currentVersion = 48F7DFD21A85227B00669CC8 /* Hackaton_OLApp.xcdatamodel */;
+			path = Hackaton_OLApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 48F7DFB21A85227B00669CC8 /* Project object */;
+}
