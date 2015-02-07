@@ -1,5 +1,6 @@
 class TestsController < ApplicationController
   before_action :set_test, only: [:show, :edit, :update, :destroy]
+   respond_to :html,:json
 
   # GET /tests
   # GET /tests.json
