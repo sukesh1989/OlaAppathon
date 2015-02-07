@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150207105335) do
+ActiveRecord::Schema.define(version: 20150207131127) do
 
   create_table "driver_trip_seats", force: :cascade do |t|
     t.string   "from",          limit: 255
@@ -49,15 +49,16 @@ ActiveRecord::Schema.define(version: 20150207105335) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",             limit: 255
-    t.string   "email",            limit: 255
-    t.string   "password",         limit: 255
-    t.string   "mobile",           limit: 255
-    t.string   "source",           limit: 255
-    t.string   "device_id",        limit: 255
-    t.string   "default_location", limit: 255
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.string   "name",        limit: 255
+    t.string   "email",       limit: 255
+    t.string   "password",    limit: 255
+    t.string   "mobile",      limit: 255
+    t.string   "source",      limit: 255
+    t.string   "device_id",   limit: 255
+    t.string   "defaultlat",  limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "defaultlong", limit: 255
   end
 
   add_foreign_key "driver_trips", "Drivers"

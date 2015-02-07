@@ -51,6 +51,18 @@ class UsersController < ApplicationController
     end
   end
 
+
+
+def check
+  @test=User.find_by_email(params[:email])
+  respond_to do |format|
+     format.json { render :show, status: :ok, location: @user }
+  end
+end
+
+
+ 
+
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
@@ -64,7 +76,7 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user =User.find_by_email(params[:email])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
