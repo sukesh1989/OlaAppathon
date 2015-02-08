@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bookingfinals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Useremail</th>
+      <th>Tripid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bookingfinals.each do |bookingfinal| %>
+      <tr>
+        <td><%= bookingfinal.useremail %></td>
+        <td><%= bookingfinal.tripid %></td>
+        <td><%= link_to 'Show', bookingfinal %></td>
+        <td><%= link_to 'Edit', edit_bookingfinal_path(bookingfinal) %></td>
+        <td><%= link_to 'Destroy', bookingfinal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bookingfinal', new_bookingfinal_path %>

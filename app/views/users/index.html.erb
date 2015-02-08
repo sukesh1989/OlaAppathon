@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Mobile</th>
+      <th>Source</th>
+      <th>Device</th>
+      <th>Default location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+   
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.password %></td>
+        <td><%= user.mobile %></td>
+        <td><%= user.source %></td>
+        <td><%= user.device_id %></td>
+        <td><%= user.defaultlong %></td>
+              <td><%= user.defaultlat %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

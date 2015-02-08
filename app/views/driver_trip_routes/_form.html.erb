@@ -1,0 +1,29 @@
+<%= form_for(@driver_trip_route) do |f| %>
+  <% if @driver_trip_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver_trip_route.errors.count, "error") %> prohibited this driver_trip_route from being saved:</h2>
+
+      <ul>
+      <% @driver_trip_route.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pointlat %><br>
+    <%= f.text_field :pointlat %>
+  </div>
+  <div class="field">
+    <%= f.label :pointlong %><br>
+    <%= f.text_field :pointlong %>
+  </div>
+  <div class="field">
+    <%= f.label :DriverTrip_id %><br>
+    <%= f.text_field :DriverTrip_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,6 +1,24 @@
 Rails.application.routes.draw do
+  resources :bookingfinals
+
+  resources :trip_routes
+
+  resources :driver_trip_routes
+
+  resources :driver_trip_seats
+
+  resources :driver_trips
+
+  resources :drivers
+
+  resources :users
+
   resources :tests
 
+  get 'booking/distance' =>'booking#distance'
+   get 'booking/create' =>'booking#create'
+
+   get 'booking/getdriver' =>'booking#getdriver'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

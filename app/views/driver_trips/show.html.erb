@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @driver_trip.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @driver_trip.end %>
+</p>
+
+<p>
+  <strong>Iscurrent:</strong>
+  <%= @driver_trip.isCurrent %>
+</p>
+
+<p>
+  <strong>Currentposition:</strong>
+  <%= @driver_trip.currentPosition %>
+</p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @driver_trip.Driver %>
+</p>
+
+<%= link_to 'Edit', edit_driver_trip_path(@driver_trip) %> |
+<%= link_to 'Back', driver_trips_path %>

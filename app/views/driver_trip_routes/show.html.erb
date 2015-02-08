@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pointlat:</strong>
+  <%= @driver_trip_route.pointlat %>
+</p>
+
+<p>
+  <strong>Pointlong:</strong>
+  <%= @driver_trip_route.pointlong %>
+</p>
+
+<p>
+  <strong>Drivertrip:</strong>
+  <%= @driver_trip_route.DriverTrip %>
+</p>
+
+<%= link_to 'Edit', edit_driver_trip_route_path(@driver_trip_route) %> |
+<%= link_to 'Back', driver_trip_routes_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Driver Trips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>End</th>
+      <th>Iscurrent</th>
+      <th>Currentposition</th>
+      <th>Driver</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @driver_trips.each do |driver_trip| %>
+      <tr>
+        <td><%= driver_trip.start %></td>
+        <td><%= driver_trip.end %></td>
+        <td><%= driver_trip.isCurrent %></td>
+        <td><%= driver_trip.currentPosition %></td>
+        <td><%= driver_trip.Driver %></td>
+        <td><%= link_to 'Show', driver_trip %></td>
+        <td><%= link_to 'Edit', edit_driver_trip_path(driver_trip) %></td>
+        <td><%= link_to 'Destroy', driver_trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Driver trip', new_driver_trip_path %>

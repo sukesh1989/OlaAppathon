@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @user.mobile %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @user.source %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @user.device_id %>
+</p>
+
+<p>
+  <strong>Default location:</strong>
+  <%= @user.defaultlat %>
+</p>
+<p>
+  <strong>Default location:</strong>
+  <%= @user.defaultlong %>
+</p>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

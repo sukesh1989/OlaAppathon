@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @driver_trip_seat.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @driver_trip_seat.to %>
+</p>
+
+<p>
+  <strong>Seatsoccupied:</strong>
+  <%= @driver_trip_seat.seatsoccupied %>
+</p>
+
+<%= link_to 'Edit', edit_driver_trip_seat_path(@driver_trip_seat) %> |
+<%= link_to 'Back', driver_trip_seats_path %>

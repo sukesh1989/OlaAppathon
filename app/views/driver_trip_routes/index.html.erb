@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Driver Trip Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pointlat</th>
+      <th>Pointlong</th>
+      <th>Drivertrip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @driver_trip_routes.each do |driver_trip_route| %>
+      <tr>
+        <td><%= driver_trip_route.pointlat %></td>
+        <td><%= driver_trip_route.pointlong %></td>
+        <td><%= driver_trip_route.DriverTrip %></td>
+        <td><%= link_to 'Show', driver_trip_route %></td>
+        <td><%= link_to 'Edit', edit_driver_trip_route_path(driver_trip_route) %></td>
+        <td><%= link_to 'Destroy', driver_trip_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Driver trip route', new_driver_trip_route_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: MyString
+  end: MyString
+  isCurrent: MyString
+  currentPosition: MyString
+  Driver_id: 
+
+two:
+  start: MyString
+  end: MyString
+  isCurrent: MyString
+  currentPosition: MyString
+  Driver_id: 

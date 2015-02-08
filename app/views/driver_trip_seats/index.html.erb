@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Driver Trip Seats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Seatsoccupied</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @driver_trip_seats.each do |driver_trip_seat| %>
+      <tr>
+        <td><%= driver_trip_seat.from %></td>
+        <td><%= driver_trip_seat.to %></td>
+        <td><%= driver_trip_seat.seatsoccupied %></td>
+        <td><%= link_to 'Show', driver_trip_seat %></td>
+        <td><%= link_to 'Edit', edit_driver_trip_seat_path(driver_trip_seat) %></td>
+        <td><%= link_to 'Destroy', driver_trip_seat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Driver trip seat', new_driver_trip_seat_path %>

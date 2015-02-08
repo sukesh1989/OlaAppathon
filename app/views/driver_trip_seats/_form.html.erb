@@ -1,0 +1,29 @@
+<%= form_for(@driver_trip_seat) do |f| %>
+  <% if @driver_trip_seat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver_trip_seat.errors.count, "error") %> prohibited this driver_trip_seat from being saved:</h2>
+
+      <ul>
+      <% @driver_trip_seat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :from %><br>
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label :to %><br>
+    <%= f.text_field :to %>
+  </div>
+  <div class="field">
+    <%= f.label :seatsoccupied %><br>
+    <%= f.text_field :seatsoccupied %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
