@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :bookingfinals
+
   resources :trip_routes
 
   resources :driver_trip_routes

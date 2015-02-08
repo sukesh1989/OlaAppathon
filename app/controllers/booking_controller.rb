@@ -16,25 +16,28 @@ class BookingController < ApplicationController
   			
            @app_url='http://maps.googleapis.com/maps/api/directions/json?origin='+@fromlat+','+@fromlong+'&destination='+t["pointlat"]+','+t["pointlong"]
 
-     	   @content=HTTParty.get(@app_url) 
+     	     @content=HTTParty.get(@app_url) 
+            
            unless @content.nil?
-           if @content["routes"][0]["legs"][0]["distance"]["value"]/1000.00<2
-           		@away=@content["routes"][0]["legs"][0]["distance"]["value"]/1000.00
+      
+            @val=@content["routes"][0]["legs"][0]["distance"]["value"]/1000.00
+            if @val <5
+           		@away=@val
+              print t["DriverTrip_id"]
            		@drivertripid=t["DriverTrip_id"]
            		break
-
-
-           	break
            end
-           end
+         end
 
-
-        
   		end
+    @d=DriverTripSeat.find(@drivertripid)
+
+
+
 
 
 		respond_to do |format|
-			format.json {render json: {:awaykm=>@away,:drivertripid=>@drivertripid}}
+			format.json {render json: {:awaykm=>@away,:car=>@d}}
       	
         end
      	   
