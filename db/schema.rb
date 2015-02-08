@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208024817) do
+ActiveRecord::Schema.define(version: 20150208025640) do
 
   create_table "bookingfinals", force: :cascade do |t|
     t.string   "useremail",  limit: 255
@@ -46,6 +46,9 @@ ActiveRecord::Schema.define(version: 20150208024817) do
     t.integer  "Driver_id",       limit: 4
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+    t.string   "startlong",       limit: 255
+    t.string   "endlong",         limit: 255
+    t.string   "currentlong",     limit: 255
   end
 
   add_index "driver_trips", ["Driver_id"], name: "index_driver_trips_on_Driver_id", using: :btree
