@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48CC9C4B1A86B5B300D190A3 /* HKUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC9C4A1A86B5B300D190A3 /* HKUserDetails.m */; };
 		48CFCAD01A85C52800A1E690 /* HKHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCACF1A85C52800A1E690 /* HKHTTPRequestOperationManager.m */; };
 		48CFCAE51A85C57000A1E690 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAD41A85C57000A1E690 /* AFURLConnectionOperation.m */; };
 		48CFCAE61A85C57000A1E690 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAD61A85C57000A1E690 /* AFHTTPRequestOperation.m */; };
@@ -17,6 +18,13 @@
 		48CFCAEB1A85C57000A1E690 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE01A85C57000A1E690 /* AFURLResponseSerialization.m */; };
 		48CFCAEC1A85C57000A1E690 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE21A85C57000A1E690 /* AFNetworkReachabilityManager.m */; };
 		48CFCAED1A85C57000A1E690 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAE41A85C57000A1E690 /* AFSecurityPolicy.m */; };
+		48CFCAF31A860B6C00A1E690 /* HKLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAF11A860B6C00A1E690 /* HKLoginVC.m */; };
+		48CFCAF41A860B6C00A1E690 /* HKLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CFCAF21A860B6C00A1E690 /* HKLoginVC.xib */; };
+		48CFCAFA1A861BAB00A1E690 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48CFCAF81A861BAB00A1E690 /* background.jpg */; };
+		48CFCAFB1A861BAB00A1E690 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CFCAF91A861BAB00A1E690 /* login.png */; };
+		48CFCAFD1A8622DE00A1E690 /* login2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CFCAFC1A8622DE00A1E690 /* login2.png */; };
+		48CFCB011A86265E00A1E690 /* HKCabBookingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CFCAFF1A86265E00A1E690 /* HKCabBookingVC.m */; };
+		48CFCB021A86265E00A1E690 /* HKCabBookingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CFCB001A86265E00A1E690 /* HKCabBookingVC.xib */; };
 		48F7DFBE1A85227B00669CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFBD1A85227B00669CC8 /* Foundation.framework */; };
 		48F7DFC01A85227B00669CC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFBF1A85227B00669CC8 /* CoreGraphics.framework */; };
 		48F7DFC21A85227B00669CC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7DFC11A85227B00669CC8 /* UIKit.framework */; };
@@ -60,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48CC9C491A86B5B300D190A3 /* HKUserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKUserDetails.h; sourceTree = "<group>"; };
+		48CC9C4A1A86B5B300D190A3 /* HKUserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKUserDetails.m; sourceTree = "<group>"; };
 		48CFCACE1A85C52800A1E690 /* HKHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		48CFCACF1A85C52800A1E690 /* HKHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		48CFCAD21A85C57000A1E690 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -81,6 +91,16 @@
 		48CFCAE21A85C57000A1E690 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		48CFCAE31A85C57000A1E690 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
 		48CFCAE41A85C57000A1E690 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		48CFCAF01A860B6C00A1E690 /* HKLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKLoginVC.h; sourceTree = "<group>"; };
+		48CFCAF11A860B6C00A1E690 /* HKLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKLoginVC.m; sourceTree = "<group>"; };
+		48CFCAF21A860B6C00A1E690 /* HKLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKLoginVC.xib; sourceTree = "<group>"; };
+		48CFCAF81A861BAB00A1E690 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		48CFCAF91A861BAB00A1E690 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		48CFCAFC1A8622DE00A1E690 /* login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login2.png; sourceTree = "<group>"; };
+		48CFCAFE1A86265E00A1E690 /* HKCabBookingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKCabBookingVC.h; sourceTree = "<group>"; };
+		48CFCAFF1A86265E00A1E690 /* HKCabBookingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKCabBookingVC.m; sourceTree = "<group>"; };
+		48CFCB001A86265E00A1E690 /* HKCabBookingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKCabBookingVC.xib; sourceTree = "<group>"; };
+		48CFCB031A86592000A1E690 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		48F7DFBA1A85227B00669CC8 /* Hackaton-OLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton-OLApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F7DFBD1A85227B00669CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48F7DFBF1A85227B00669CC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48CC9C481A86B57E00D190A3 /* DataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				48CC9C491A86B5B300D190A3 /* HKUserDetails.h */,
+				48CC9C4A1A86B5B300D190A3 /* HKUserDetails.m */,
+			);
+			name = DataClasses;
+			sourceTree = "<group>";
+		};
 		48CFCAD11A85C54700A1E690 /* Network Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +226,34 @@
 				48CFCAD11A85C54700A1E690 /* Network Manager */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		48CFCAF51A860B7800A1E690 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAF01A860B6C00A1E690 /* HKLoginVC.h */,
+				48CFCAF11A860B6C00A1E690 /* HKLoginVC.m */,
+				48CFCAF21A860B6C00A1E690 /* HKLoginVC.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		48CFCAF61A861B9300A1E690 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAF71A861B9B00A1E690 /* Login */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		48CFCAF71A861B9B00A1E690 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				48CFCAFC1A8622DE00A1E690 /* login2.png */,
+				48CFCAF81A861BAB00A1E690 /* background.jpg */,
+				48CFCAF91A861BAB00A1E690 /* login.png */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		48F7DFB11A85227B00669CC8 = {
@@ -246,6 +303,8 @@
 		48F7DFC51A85227B00669CC8 /* Hackaton-OLApp */ = {
 			isa = PBXGroup;
 			children = (
+				48CC9C481A86B57E00D190A3 /* DataClasses */,
+				48CFCAF51A860B7800A1E690 /* Login */,
 				48CFCAEF1A85C59800A1E690 /* Network */,
 				48F7E00D1A85250C00669CC8 /* Map View Controller */,
 				48F7DFCE1A85227B00669CC8 /* HKAppDelegate.h */,
@@ -253,6 +312,9 @@
 				48F7DFD41A85227B00669CC8 /* Images.xcassets */,
 				48F7DFD11A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld */,
 				48F7DFC61A85227B00669CC8 /* Supporting Files */,
+				48CFCAFE1A86265E00A1E690 /* HKCabBookingVC.h */,
+				48CFCAFF1A86265E00A1E690 /* HKCabBookingVC.m */,
+				48CFCB001A86265E00A1E690 /* HKCabBookingVC.xib */,
 			);
 			path = "Hackaton-OLApp";
 			sourceTree = "<group>";
@@ -282,6 +344,7 @@
 			children = (
 				48F7DFE41A85227B00669CC8 /* Hackaton-OLAppTests-Info.plist */,
 				48F7DFE51A85227B00669CC8 /* InfoPlist.strings */,
+				48CFCB031A86592000A1E690 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -289,6 +352,7 @@
 		48F7DFF61A8522B200669CC8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				48CFCAF61A861B9300A1E690 /* Images */,
 				48F7DFF41A8522A900669CC8 /* GoogleMaps.bundle */,
 			);
 			name = Resources;
@@ -380,10 +444,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CFCAFD1A8622DE00A1E690 /* login2.png in Resources */,
 				48F7DFF51A8522A900669CC8 /* GoogleMaps.bundle in Resources */,
+				48CFCB021A86265E00A1E690 /* HKCabBookingVC.xib in Resources */,
 				48F7DFCA1A85227B00669CC8 /* InfoPlist.strings in Resources */,
+				48CFCAF41A860B6C00A1E690 /* HKLoginVC.xib in Resources */,
+				48CFCAFA1A861BAB00A1E690 /* background.jpg in Resources */,
 				48F7E0121A85254300669CC8 /* HKMapVC.xib in Resources */,
 				48F7DFD51A85227B00669CC8 /* Images.xcassets in Resources */,
+				48CFCAFB1A861BAB00A1E690 /* login.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +476,11 @@
 				48CFCAEC1A85C57000A1E690 /* AFNetworkReachabilityManager.m in Sources */,
 				48F7DFCC1A85227B00669CC8 /* main.m in Sources */,
 				48F7DFD01A85227B00669CC8 /* HKAppDelegate.m in Sources */,
+				48CFCAF31A860B6C00A1E690 /* HKLoginVC.m in Sources */,
+				48CFCB011A86265E00A1E690 /* HKCabBookingVC.m in Sources */,
 				48F7E0111A85254300669CC8 /* HKMapVC.m in Sources */,
 				48F7DFD31A85227B00669CC8 /* Hackaton_OLApp.xcdatamodeld in Sources */,
+				48CC9C4B1A86B5B300D190A3 /* HKUserDetails.m in Sources */,
 				48CFCAE51A85C57000A1E690 /* AFURLConnectionOperation.m in Sources */,
 				48CFCAD01A85C52800A1E690 /* HKHTTPRequestOperationManager.m in Sources */,
 				48CFCAEA1A85C57000A1E690 /* AFURLRequestSerialization.m in Sources */,

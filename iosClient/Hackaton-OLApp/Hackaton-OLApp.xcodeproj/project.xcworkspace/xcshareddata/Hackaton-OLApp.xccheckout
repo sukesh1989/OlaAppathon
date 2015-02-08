@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9BE9695D-7115-4F9B-A6FD-65A95D535CC5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hackaton-OLApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9F891829-599C-4BF6-ACE2-EA6F3B2ED112</key>
+		<string>https://github.com/sukesh1989/OlaAppathon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosClient/Hackaton-OLApp/Hackaton-OLApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9F891829-599C-4BF6-ACE2-EA6F3B2ED112</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sukesh1989/OlaAppathon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9F891829-599C-4BF6-ACE2-EA6F3B2ED112</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F891829-599C-4BF6-ACE2-EA6F3B2ED112</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OlaAppathon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

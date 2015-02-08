@@ -8,7 +8,8 @@
 
 #import "HKAppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
-#import "HKMapVC.h"
+//#import "HKMapVC.h"
+#import "HKLoginVC.h"
 
 @implementation HKAppDelegate
 
@@ -25,8 +26,11 @@
     [GMSServices provideAPIKey:@"AIzaSyAxW6gdB0eUOAZSu42QyrJMPrnlZ0ayYKU"];
 
     //Set up Map VC
-    self.objMapVC = [[HKMapVC alloc] initWithNibName:@"HKMapVC" bundle:[NSBundle mainBundle]];
-    self.window.rootViewController = self.objMapVC;
+    //self.objMapVC = [[HKMapVC alloc] initWithNibName:@"HKMapVC" bundle:[NSBundle mainBundle]];
+    self.objLoginVC = [[HKLoginVC alloc] initWithNibName:@"HKLoginVC" bundle:[NSBundle mainBundle]];
+    UINavigationController *objNavController = [[UINavigationController alloc] initWithRootViewController:self.objLoginVC];
+    objNavController.navigationBar.hidden = YES;
+    self.window.rootViewController = objNavController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
