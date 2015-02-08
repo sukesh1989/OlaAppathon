@@ -20,8 +20,8 @@ class BookingController < ApplicationController
             
            unless @content.nil?
       
-            @val=@content["routes"][0]["legs"][0]["distance"]["value"]/1000.00
-            if @val <5
+            @val=@content["routes"][0]["legs"][0]["distance"]["value"]/1000.00 unless @content["routes"][0]["legs"][0]["distance"]["value"].nil?
+            if @val <10
            		@away=@val
               print t["DriverTrip_id"]
            		@drivertripid=t["DriverTrip_id"]
