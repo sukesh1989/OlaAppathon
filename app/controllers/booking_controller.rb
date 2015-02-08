@@ -37,6 +37,7 @@ class BookingController < ApplicationController
 
 
 		respond_to do |format|
+      
 			format.json {render json: {:awaykm=>@away,:car=>@d}}
       	
         end
