@@ -13,8 +13,10 @@ Rails.application.routes.draw do
 
   resources :tests
 
-  #get 'users/:id' =>'users#index'
+  get 'booking/distance' =>'booking#distance'
+   get 'booking/create' =>'booking#create'
 
+   get 'booking/getdriver' =>'booking#getdriver'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -10,3 +10,4 @@ class Createroutetable < ActiveRecord::Migration
    
   end
 end
+
