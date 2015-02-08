@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150207141503) do
+ActiveRecord::Schema.define(version: 20150208024817) do
+
+  create_table "bookingfinals", force: :cascade do |t|
+    t.string   "useremail",  limit: 255
+    t.string   "tripid",     limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "driver_trip_routes", force: :cascade do |t|
     t.string   "pointlat",      limit: 255
@@ -49,6 +56,7 @@ ActiveRecord::Schema.define(version: 20150207141503) do
     t.string   "currentlocation", limit: 255
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+    t.string   "long",            limit: 255
   end
 
   create_table "tests", force: :cascade do |t|
